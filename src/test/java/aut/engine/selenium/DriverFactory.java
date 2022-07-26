@@ -14,7 +14,7 @@ public class DriverFactory {
 
     /**
      * inicializa el WebDriver segun la seleccion del browser
-     * @param browser: chrome | firefox
+     * @param browser: edge | firefox
      * @return Webdriver
      */
     public WebDriver inicializarDriver(String browser){

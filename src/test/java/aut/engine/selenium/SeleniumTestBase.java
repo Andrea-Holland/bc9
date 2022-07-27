@@ -33,6 +33,6 @@ public class SeleniumTestBase {
     @Description ("Cierre de WebDriver")
     void close(){
         driver.quit();
-    }
+    } //instancia creada ya no esta disponible, se cierra el navegador
 
 }

@@ -1,5 +1,6 @@
 package aut.engine.selenium;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -30,7 +31,10 @@ public class DriverFactory {
             System.out.println("Please pass the correct browser value: "+browser);
         }
         getDriver().manage().deleteAllCookies();
+        getDriver().manage().window().minimize();
         getDriver().manage().window().maximize();
+        getDriver().manage().window().setSize(new Dimension(800,600));
+        getDriver().manage().window().fullscreen();
         return getDriver();
     }
 
